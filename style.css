@@ -27,6 +27,8 @@ body{
 header{
     width: 100%;
     position: sticky;
+    top: 0;
+    z-index: 10;
     /* position: fixed;
     top: 0;
     z-index: 10; */
@@ -35,7 +37,7 @@ header{
     justify-content: space-between;
 
     padding: 20px 100px;
-
+background-color: black;
     transition: 0.5s;
     /* background-color: gray; */
 }
@@ -88,3 +90,65 @@ header{
     border-radius: 0.5rem;
 }
 
+.btn:hover{
+    background-color: #f60d0d;
+}
+
+.container{
+    width: 100%;
+    min-height: 640px;
+    position: relative;
+    display: flex;
+    align-items: center;
+   
+}
+
+.container img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.4;
+
+}
+
+.home-text{
+    padding-left: 150px;
+} 
+
+.home-text span{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.home-text h1{
+    color: var(--text-color);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.home-text .play{
+    position: absolute;
+    right: 4rem;
+    bottom: 10%;
+   
+}
+
+.home-text .play .bx{
+    color: var(--text-color);
+    font-size: 2rem;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    padding: 10PX;
+    border:4px solid rgb(2,3,7,0.4);
+    margin-right: 30px;
+}
+
+.home-text .play:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+    filter: brightness(1.3);
+}
