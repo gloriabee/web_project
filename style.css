@@ -152,3 +152,46 @@ background-color: black;
     transition: 0.5s;
     filter: brightness(1.3);
 }
+
+/* movie section */
+.heading {
+    max-width: 968px;
+    margin: 20px auto 10px auto;
+    font-size: 1.2rem;
+    font-weight:bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.movie_container{
+    max-width: 960px;
+    margin: 0 auto 0 auto;
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap: 1rem;
+    margin-top: 2rem;
+    
+}
+
+.box .box-img{
+    width: 100%;
+    height: 270px;
+}
+
+.box .movie-text{
+    margin: 2rem 0;
+}
+
+.box .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    box-shadow: 10px 5px 10px #34344a;
+}
+
+.box .box-img img:hover{
+    transform: translateY(-10px);
+    filter: brightness(1.2);
+}
